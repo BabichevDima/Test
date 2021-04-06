@@ -22,12 +22,12 @@ export const App = () => {
 
       {date.map(({ page }, index) => {
         return (
-          <div key={page.id}>
+          <Wrapper key={page.id}>
             {/* <Page page={page}></Page> */}
             {index === current && (
               <Page key={page.id} page={page} nextSlide={nextSlide}></Page>
             )}
-          </div>
+          </Wrapper>
         );
       })}
 
@@ -50,6 +50,9 @@ export const App = () => {
 
 const Section = styled.div`
   position: relative;
+  max-width: 1024px;
+  /* overflow-x: scroll; */
+  margin: auto;
 `;
 
 const SectionButton = styled.div`
@@ -78,4 +81,8 @@ const RoundButton = styled.div`
     background-color: grey;
     cursor: pointer;
   }
+`;
+
+const Wrapper = styled.div`
+
 `;

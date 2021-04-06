@@ -56,9 +56,12 @@ export const date = [
       circles: null,
       colorText: "#fff",
       slider: [
-        { title: "Dima", image: ImgThree },
-        { title: 26, image: ImgThree2 },
-        { title: "Babichev", image: ImgThree3 },
+        { title: "Смертельный октет", colorText: "#fff", image: ImgThree2 },
+        {
+          title: "Звенья патогенеза СД2. Это должна быть 3 страница",
+          colorText: "#fff",
+          image: ImgThree3,
+        },
       ],
     },
   },
